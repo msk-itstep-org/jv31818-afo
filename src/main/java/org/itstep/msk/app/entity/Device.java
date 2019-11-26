@@ -7,7 +7,6 @@ import java.util.Set;
 
 @Entity
 @Table(name = "devices")
-//Inheritance дискриминатор MappedSuperclass
 public class Device {
 
     @Column(name = "id") @Id

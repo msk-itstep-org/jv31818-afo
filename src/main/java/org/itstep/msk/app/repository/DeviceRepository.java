@@ -13,5 +13,5 @@ public interface DeviceRepository extends JpaRepository<Device, Integer> {
 
 
     //???поиск множества устройств, уже архивированных (archived == true);
-    Iterable<Device> findByArchivedDevice(Integer archivedDevice);
+//    Iterable<Device> findByArchivedDevice(Integer archivedDevice);
 }

@@ -1,11 +1,11 @@
-CREATE TABLE demo_honeywell.users (
+CREATE TABLE users (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(25) NOT NULL UNIQUE,
   email VARCHAR(25) NOT NULL UNIQUE,
   password VARCHAR(25)
 );
 
-CREATE TABLE demo_honeywell.devices (
+CREATE TABLE devices (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   device_desc VARCHAR(255) NOT NULL,
   device_sku VARCHAR(25) UNIQUE,
@@ -15,7 +15,7 @@ CREATE TABLE demo_honeywell.devices (
   CONSTRAINT user_id_devices_fk FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE SET NULL
 );
 
-CREATE TABLE demo_honeywell.loans (
+CREATE TABLE loans (
   id INT PRIMARY KEY AUTO_INCREMENT,
   loan_desc VARCHAR(255) NOT NULL,
   start_date DATE,
